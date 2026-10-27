@@ -1628,6 +1628,40 @@ strong {
     min-width: inherit;
   } */
 }
+@media screen and (max-width: 365px) {
+  h1 {
+    font-size: 29px !important;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .navbar-brand {
+    font-size: 17px !important;
+  }
+
+  h5 {
+    font-size: 15px;
+  }
+
+  .custom-btn,
+  .navbar .custom-btn {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .navbar-icon {
+    font-size: var(--copyright-font-size);
+    width: 35.5px;
+    height: 35.5px;
+    line-height: 35.5px;
+  }
+}
 
 .services-price-text {
   color: #0a192f !important;

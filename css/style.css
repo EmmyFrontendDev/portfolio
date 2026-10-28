@@ -954,6 +954,17 @@ strong {
     font-size: 14px;
     white-space: nowrap;
   }
+  /* Allow the expanded menu to move onto its own row */
+.navbar .container:has(.navbar-collapse.show) {
+  flex-wrap: wrap;
+}
+
+.navbar .navbar-collapse {
+  flex: 0 0 100%;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
 
 
   /* HERO SECTION */

@@ -916,6 +916,109 @@ strong {
 --------------------------------------- */
 
 @media screen and (max-width: 575px) {
+  .navbar .container {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+  .hero {
+    padding-bottom: 100px;
+  }
+  
+  /* NAVIGATION */
+  .navbar .container {
+    flex-wrap: nowrap;
+    padding: 12px 14px;
+    gap: 8px;
+  }
+
+  .navbar-toggler {
+    flex: 0 0 30px;
+  }
+
+  .navbar-brand {
+    font-size: clamp(16px, 4.5vw, 22px);
+    white-space: nowrap;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    flex: 1 1 auto;
+    text-align: center;
+    min-width: 0;
+  }
+
+  .navbar .d-flex.align-items-center.d-lg-none {
+    flex: 0 0 auto;
+  }
+
+  .navbar .d-flex.align-items-center.d-lg-none .custom-btn {
+    padding: 8px 10px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+
+  /* HERO SECTION */
+  .hero {
+    padding-top: 150px;
+    padding-bottom: 110px;
+  }
+
+  .hero .container,
+  .hero .row,
+  .hero .col-lg-7 {
+    min-width: 0;
+  }
+
+  .hero-title-wrap {
+    margin-bottom: 24px !important;
+  }
+
+  /* Allow the heading to wrap naturally on phones */
+  .hero-title-wrap .hero-title {
+    font-size: clamp(30px, 7.8vw, 42px) !important;
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+    margin-left: 0 !important;
+    overflow-wrap: normal;
+  }
+
+  .hero-title-wrap .hero-title br {
+    display: none;
+  }
+
+
+  /* ANIMATED TEXT PILL */
+  .hero h2 {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: clamp(16px, 4.5vw, 22px) !important;
+    line-height: 1.4;
+    padding: 12px 16px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    margin-bottom: 22px;
+  }
+
+  #typing {
+    display: inline;
+    overflow-wrap: anywhere;
+  }
+
+  #typing::after {
+    margin-left: 2px;
+  }
+
+  /* AUDIT BUTTON */
+  .hero .hero-text > p {
+    margin-bottom: 0 !important;
+  }
+
+  .hero .custom-link {
+    display: inline-block;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
   .how-i-work {
     margin-top: 35px;
   }
@@ -1575,111 +1678,9 @@ strong {
   }
 }
 
-@media screen and (max-width: 575px) {
-  .navbar .container {
-    margin-right: 12px;
-    margin-left: 12px;
-  }
-  .hero {
-    padding-bottom: 100px;
-  }
+/* @media screen and (max-width: 575px) {
   
-  /* NAVIGATION */
-  .navbar .container {
-    flex-wrap: nowrap;
-    padding: 12px 14px;
-    gap: 8px;
-  }
-
-  .navbar-toggler {
-    flex: 0 0 30px;
-  }
-
-  .navbar-brand {
-    font-size: clamp(16px, 4.5vw, 22px);
-    white-space: nowrap;
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-    flex: 1 1 auto;
-    text-align: center;
-    min-width: 0;
-  }
-
-  .navbar .d-flex.align-items-center.d-lg-none {
-    flex: 0 0 auto;
-  }
-
-  .navbar .d-flex.align-items-center.d-lg-none .custom-btn {
-    padding: 8px 10px;
-    font-size: 14px;
-    white-space: nowrap;
-  }
-
-
-  /* HERO SECTION */
-  .hero {
-    padding-top: 150px;
-    padding-bottom: 110px;
-  }
-
-  .hero .container,
-  .hero .row,
-  .hero .col-lg-7 {
-    min-width: 0;
-  }
-
-  .hero-title-wrap {
-    margin-bottom: 24px !important;
-  }
-
-  /* Allow the heading to wrap naturally on phones */
-  .hero-title-wrap .hero-title {
-    font-size: clamp(30px, 7.8vw, 42px) !important;
-    line-height: 1.12;
-    letter-spacing: -1.5px;
-    margin-left: 0 !important;
-    overflow-wrap: normal;
-  }
-
-  .hero-title-wrap .hero-title br {
-    display: none;
-  }
-
-
-  /* ANIMATED TEXT PILL */
-  .hero h2 {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    font-size: clamp(16px, 4.5vw, 22px) !important;
-    line-height: 1.4;
-    padding: 12px 16px;
-    white-space: normal;
-    overflow-wrap: anywhere;
-    margin-bottom: 22px;
-  }
-
-  #typing {
-    display: inline;
-    overflow-wrap: anywhere;
-  }
-
-  #typing::after {
-    margin-left: 2px;
-  }
-
-  /* AUDIT BUTTON */
-  .hero .hero-text > p {
-    margin-bottom: 0 !important;
-  }
-
-  .hero .custom-link {
-    display: inline-block;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-}
+} */
 
 @media screen and (max-width: 480px) {
   h1 {

@@ -1725,8 +1725,8 @@ strong {
     min-width: inherit;
   } */
 }
-@media screen and (max-width: 365px) {
-  h1 {
+@media screen and (max-width: 400px) {
+  /* h1 {
     font-size: 29px !important;
   }
 
@@ -1736,15 +1736,15 @@ strong {
 
   h3 {
     font-size: 18px;
-  }
+  } */
 
   .navbar-brand {
     font-size: 17px !important;
   }
 
-  h5 {
+  /* h5 {
     font-size: 15px;
-  }
+  } */
 
   .custom-btn,
   .navbar .custom-btn {
@@ -1757,6 +1757,111 @@ strong {
     width: 35.5px;
     height: 35.5px;
     line-height: 35.5px;
+  }
+    /* NAVBAR: fit everything on one row */
+  .navbar .container {
+    padding: 10px 8px !important;
+    gap: 6px;
+    flex-wrap: nowrap;
+  }
+
+  .navbar-toggler {
+    flex: 0 0 26px;
+    width: 26px;
+  }
+
+  .navbar-toggler .navbar-toggler-icon,
+  .navbar-toggler .navbar-toggler-icon::before,
+  .navbar-toggler .navbar-toggler-icon::after {
+    width: 26px;
+  }
+
+  .navbar-brand {
+    font-size: 15px !important;
+    margin: 0 !important;
+    flex: 1 1 auto;
+    min-width: 0;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: -0.5px;
+  }
+
+  .navbar .d-flex.align-items-center.d-lg-none {
+    flex: 0 0 auto;
+  }
+
+  .navbar .d-flex.align-items-center.d-lg-none .custom-btn {
+    font-size: 11px !important;
+    padding: 7px 8px !important;
+    white-space: nowrap;
+  }
+
+
+  /* HERO: reduce excess spacing */
+  .hero {
+    padding-top: 125px !important;
+    padding-bottom: 85px !important;
+  }
+
+  .hero .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .hero-title-wrap {
+    margin-bottom: 18px !important;
+  }
+
+  /* Remove the hard-coded HTML line break */
+  .hero-title-wrap .hero-title br {
+    display: none !important;
+  }
+
+  /* Make the headline wrap naturally */
+  .hero-title-wrap .hero-title {
+    font-size: 29px !important;
+    line-height: 1.13 !important;
+    letter-spacing: -1.4px !important;
+    margin-left: 0 !important;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+
+  /* ANIMATED TEXT PILL */
+  .hero h2 {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    padding: 10px 12px !important;
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    margin-bottom: 18px !important;
+  }
+
+  #typing {
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    max-width: 100%;
+  }
+
+  #typing::after {
+    margin-left: 2px;
+  }
+
+
+  /* AUDIT CTA */
+  .hero .hero-text > p {
+    margin-bottom: 0 !important;
+  }
+
+  .hero .custom-link {
+    font-size: 14px !important;
+    padding: 10px 16px !important;
+    white-space: normal;
   }
 }
 

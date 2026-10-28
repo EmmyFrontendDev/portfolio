@@ -926,7 +926,7 @@ strong {
   
   /* NAVIGATION */
   .navbar .container {
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     padding: 12px 14px;
     gap: 8px;
   }
